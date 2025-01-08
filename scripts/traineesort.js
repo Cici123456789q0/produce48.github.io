@@ -3,9 +3,9 @@
 // always initially sort by id
 var activeCompares = [idCompare]
 var showEliminated = false;
-var showTop96 = false;
+var showTop96 = true;
 
-// This a compare by id on the trainees and guarantees stability of the sort
+// This a compare by id on the✓trainees and guarantees stability of the sort
 function idCompare(trainee1, trainee2) {
   if (trainee1.id < trainee2.id) {
     return -1;
@@ -14,7 +14,7 @@ function idCompare(trainee1, trainee2) {
     return 1;
   }
   return 0;
-}
+} 
 
 // compare by whether trainee is eliminated and put eliminated at bottom
 function eliminatedAtBottomCompare(trainee1, trainee2) {
