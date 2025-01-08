@@ -1,9 +1,9 @@
-// File holds lots of sorting logic for the filter checkboxes
+// File holds lots of sorting logic for the filter checkboxes.
 
 // always initially sort by id
 var activeCompares = [idCompare]
 var showEliminated = false;
-var showTop96 = true;
+var showTop96 = false;
 
 // This a compare by id on the✓trainees and guarantees stability of the sort
 function idCompare(trainee1, trainee2) {
